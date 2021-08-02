@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home-Your-Trip</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="HomePage-Login.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="p_container">
+		<div class="head">
+			<!-- Top Links -->	
+		<div class="navbar navbar-expand-sm">
+			<img src="images\LOGO SVG.svg" class="navbar-brand">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			<div class="top-links collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+				<li class="nav-item">
+					<span class="material-icons">attach_money</span> <a class="nav-link" href="">INR</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<span class="material-icons">language</span><a class="nav-link" href="">Language</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<span class="material-icons">chat</span><a class="nav-link" href="">Blogs</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item" style="border-right: none;">
+					<span class="material-icons">person</span><a class="nav-link" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown">Login</a>
+					<div id="myaccount" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<p>Members can access discounts,points<br>and special features</p>
+                        <button>Log in</button><br>
+                        <a href="" class="create-account">Create free account</a>
+                        <hr>
+                        <a href="" class="feedback">Feedback</a>
+					  </div>
+				</li>
+			</ul>
+			</div>
+		</div>
+	<!-- Search Box -->	
+		<div id="Search-box">
+			<h1><b>EXPLORE THE WORLD WITH US</b></h1>
+			<div class="row">
+				<div class="search_bar">
+					<form>						
+						<div class="row search_field_1">
+							<div class="col-lg-3 col-md-4">
+								<div class="form-group">
+									<span class="form-lable">Origin</span>
+									<input class="form-control-plaintext" type="text" name="" placeholder="City or Airport">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4">
+								<div class="form-group">
+									<span class="form-lable">Travellers</span>
+									<input class="form-control-plaintext" type="text" name="" placeholder="1 room, 2 travellers">
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3">
+								<div class="form-group">
+									<span class="form-lable">Inbound</span>
+									<input class="form-control-plaintext" type="date" name="">
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3">
+								<div class="form-group">
+									<span class="form-lable">Outbound</span>
+									<input class="form-control-plaintext" type="date" name="">
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2">
+								<div class="form-btn">
+									<button class="btn"><span class="material-icons">search</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="row row-col-3 search_field_2">
+							<div class="col-auto">
+								<div class="search_recent_hotel">
+									<p>Recent trips :</p>
+									<input class="search_input" type="text" name="" placeholder="Chennai -> Kaulalumpur">
+									<input class="search_input" type="text" name="" placeholder="Delhi -> Paris">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="navbar navbar-expand-sm upper_search_bar">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#upper_search_bar">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+	  				<div class="navbar upper_links collapse navbar-collapse" id="upper_search_bar">
+	  					<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="Hotels.html">HOTELS</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html">FLIGHTS</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="Holidays.html">HOLIDAYS</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link"   style="color: #007bff;" href="Your-Trip.html">PLAN YOUR TRIP</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item border-right-0">
+									<a class="nav-link" href="">MORE</a><button data-toggle="dropdown"><span class="material-icons">more_horiz</span></button>
+									<div id="more" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Car Ride</a>
+										<a class="dropdown-item" href="#">Bus Ride</a>
+										<a class="dropdown-item" href="#">Visa</a>
+										<a class="dropdown-item" href="#">Forex Exchange</a>
+									  </div>
+								</li>
+							</ul>
+	  				</div>
+				</div>
+			</div>	
+		<!--Schedule Call-->	
+			<div class="schedule_call">
+				<p>Looking to plan a Corporate Trip ?</p>
+				<a href="">Schedule a Call -></a>
+			</div>
+		</div>
+		</div>
+	<!--Covid-19 -->	
+		<div class="covid-19">
+			<img src="https://img.icons8.com/color/48/000000/appointment-reminders--v1.png"/>
+			<a href=""><p>New feature for travelling during the Covid-19(coronavirus outbreak)</p></a>
+		</div>	
+	<!-- Hotel Recommendation -->
+		<div class="cover-container">
+			<div class="hotel-recommendation">
+				<h3><b>We bring you the<br> finest luxury hotels</b></h3>
+				<p><span style="color: #8f8f8f;">Special offers on yours credit cards</span></p>
+				<div id="demo" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="img-row-1">
+							<div class="image-1">
+								<img class="img-1" src="images/hkt-hype11.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/unnamed.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-row-2">
+							<div class="image-1">
+								<img class="img-1" src="images/switzerland-header-2.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/Wonderful-Restaurant-Wallpaper.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-3">
+								<img class="img-3" src="images/download.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="img-row-1">
+							<div class="image-1">
+								<img class="img-1" src="images/french-mountains.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/images.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-row-2">
+							<div class="image-1">
+								<img class="img-1" src="images/topic-london-gettyimages-760251843-promo.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/unnamed.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-3">
+								<img class="img-3" src="images/Valley-Taurus-Mountains-Turkey.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="img-row-1">
+							<div class="image-1">
+								<img class="img-1" src="images/switzerland-header-2.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/unnamed.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-row-2">
+							<div class="image-1">
+								<img class="img-1" src="images/french-mountains.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/unnamed.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-3">
+								<img class="img-3" src="images/topic-london-gettyimages-760251843-promo.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <button class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="material-icons">chevron_left</span>
+				  </button>
+				  <button class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="material-icons">chevron_right</span>
+				  </button>
+				</div>
+			</div>
+		</div>	
+	<!-- Review Section -->
+		<div class="cover-container">
+			<div class="review">
+				<div class="heading">
+					<h3><b>Know From Our<br> Customers</b></h3>
+				</div>
+				<div id="review-slides" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="customer">
+								  <div class="customer-details">
+									  <img src="Person.jpg"></img>
+									  <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quos velit</b></p>
+									  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti eaque repudiandae commodi</p>
+								  </div>
+								  <div class="image">
+									  <img src="images/Untitled-design-59-810x486.jpg"></img>
+									  <div class="caption">
+										  <h4>Maldives</h4>
+										  <p>Explore the Nature</p>
+									  </div>
+								  </div>
+							</div>    
+						</div>
+						<div class="carousel-item">
+						  <div class="customer">
+								<div class="customer-details">
+									<img src="Person.jpg"></img>
+									<p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quos velit</b></p>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti eaque repudiandae commodi</p>
+								</div>
+								<div class="image">
+									<img src="images/images.jpg"></img>
+									<div class="caption">
+										<h4>Maldives</h4>
+										<p>Explore the Nature</p>
+									</div>
+								</div>
+						  </div>    
+						</div>
+				  	</div>
+					  <button class="carousel-control-prev" href="#review-slides" data-slide="prev">
+						<span class="material-icons">chevron_left</span>
+						</button>
+						<button class="carousel-control-next" href="#review-slides" data-slide="next">
+							<span class="material-icons">chevron_right</span>
+						</button>
+				</div>
+			</div>
+		</div>	
+	<!-- Most Searched Hotels -->
+		<div class="cover-container most-searched-hotels-1">
+			<div class="most-searched-hotels-2">
+				<h3>Trendings</h3>
+				<p>Special offers on your credit card</p>
+				<div class="card-columns">
+					<div class="card">
+						<a href=""><img class="card-img-top" src="images/aria-resort-casino.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="images/aria-resort-casino.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="images/LTI.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="images/LTI.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="images/Luxury_Hotel_And_Resort_Collection_01.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="images/Luxury_Hotel_And_Resort_Collection_01.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="Hotel-1.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href=""><img class="card-img-top" src="Hotel-1.jpg"></a>
+						<div class="card-body">
+							<h5 class="card-title">Affordable Luxury Hotels</h5>
+							<p class="card-text">Special Offers on your credit card</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	<!--Suggetions Section-->
+		<div class="cover-container">
+			<div class="suggetions">
+				<h4><b>Ideas for your next Trip</b></h4>
+				<p>Special offers on your credit cards</p>
+				<div id="suggestion-slides" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="sugg-row">
+							  <div class="image-1">
+								  <img class="img-1" src="images/hkt-hype11.jpg">
+								  <div class="caption">
+									  <h3>Maldives</h3>
+									  <p>Explore the Nature</p>
+								  </div>
+							  </div>
+							  <div class="image-2">
+								  <img class="img-2" src="images/hkt-hype11.jpg">
+								  <div class="caption">
+									  <h3>Maldives</h3>
+									  <p>Explore the Nature</p>
+								  </div>
+							  </div>
+							</div>
+						</div>
+						<div class="carousel-item">
+						  <div class="sugg-row">
+							<div class="image-1">
+								<img class="img-1" src="images/french-mountains.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/french-mountains.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <div class="sugg-row">
+							<div class="image-1">
+								<img class="img-1" src="images/switzerland-header-2.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+							<div class="image-2">
+								<img class="img-2" src="images/switzerland-header-2.jpg">
+								<div class="caption">
+									<h3>Maldives</h3>
+									<p>Explore the Nature</p>
+								</div>
+							</div>
+						  </div>
+						</div>
+					  <button class="carousel-control-prev" href="#suggestion-slides" data-slide="prev">
+						<span class="material-icons">chevron_left</span>
+					  </button>
+					  <button class="carousel-control-next" href="#suggestion-slides" data-slide="next">
+						<span class="material-icons">chevron_right</span>
+					  </button>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	<!-- Footer -->
+		<div class="footer">
+			<div class="company-logo">
+				<h4>Tripees</h4>
+			</div>
+			<div class="company">
+				<h5>Company</h5>
+				<ul>
+					<li><a href="">Company</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Reading</a></li>
+					<li><a href="">Gift Cards</a></li>
+					<li><a href="">Testimonials</a></li>
+				</ul>
+			</div>
+			<div class="explore">
+				<h5>Explore</h5>
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Explore</a></li>
+				</ul>
+			</div>
+			<div class="terms-policies">
+				<h5>Terms and Policies</h5>
+				<ul>
+					<li><a href="">Terms and Policies</a></li>
+					<li><a href="">Terms</a></li>
+				</ul>
+			</div>
+			<div class="help">
+				<h5>Help</h5>
+				<ul>
+					<li><a href="">Support</a></li>
+					<li><a href="">Cancel Order</a></li>
+					<li><a href="">Help</a></li>
+					<li><a href="">Help</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bar"></div> 
+	</div>		
+</body>
+</html>
